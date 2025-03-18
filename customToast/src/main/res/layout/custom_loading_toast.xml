@@ -13,29 +13,29 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingVertical="4dp"
-        android:background="@color/light_green"
+        android:background="@color/hint"
         android:gravity="center">
 
         <!-- Done Icon -->
         <ImageView
-            android:id="@+id/toast_icon"
+            android:id="@+id/load_icon"
             android:layout_width="24dp"
             android:layout_marginStart="8dp"
             android:layout_height="24dp"
             android:padding="2dp"
-            android:src="@drawable/svg_done"/>
+            android:src="@drawable/svg_loading"/>
 
         <!-- Message -->
         <TextView
-            android:id="@+id/done_message"
+            android:id="@+id/load_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is codewati"
+            android:text="Loading..."
             android:singleLine="true"
             android:ellipsize="end"
             android:layout_marginStart="6dp"
             android:layout_marginEnd="12dp"
-            android:textColor="@color/green"/>
+            android:textColor="@color/black"/>
 
     </LinearLayout>
 
