@@ -21,42 +21,65 @@ dependencies {
 	}
 ```
 
-> For JAVA
+> Step 3. Add the Code.
+# For JAVA
 (MainActivity.java)
 ```
 	Toaster.doneToast(this, "Success Button");
+
 	Toaster.alertToast(this, "Error Button");
+
 	Toaster.warningToast(this, "Warning Button");
+
 	Toaster.loadingToast(this, "Loading Button");
+
 	Toaster.infoToast(this, "Info Button");
+
 	Toaster.shortToast(this, "Short Toast");
+
 	Toaster.longToast(this, "Long Toast");
 
 
-View rootView = getWindow().getDecorView().findViewById(android.R.id.content);
+
+
+View rootView = getWindow().getDecorView().findViewById(android.R.id.content);	// Must Add this line for Snackbar
 
 	Toaster.doneSnackbar(rootView, "Success Snackbar");
+
 	Toaster.alertSnackbar(rootView, "Error Snackbar");
+
 	Toaster.infoSnackbar(rootView, "Info Snackbar");
+
 	Toaster.warningSnackbar(rootView, "Warning Snackbar");
 ```
 
-> For KOTLIN
+# For KOTLIN
 (MainActivity.kt)
 ```
 	Toaster.shortToast(this, "Short Toast")
+
         Toaster.longToast(this, "Long Toast")
+
         Toaster.doneToast(this, "Success Button")
+
         Toaster.alertToast(this, "Error Button")
+
         Toaster.warningToast(this, "Warning Button")
+
         Toaster.loadingToast(this, "Loading Button")
+
         Toaster.infoToast(this, "Info Button")
 
-        val rootView: View = window.decorView.findViewById(android.R.id.content)
+
+
+        val rootView: View = window.decorView.findViewById(android.R.id.content)	// Must Add this line for Snackbar
 
         Toaster.doneSnackbar(rootView, "Success Snackbar")
+
         Toaster.alertSnackbar(rootView, "Error Snackbar")
+
         Toaster.warningSnackbar(rootView, "Warning Snackbar")
+
         Toaster.infoSnackbar(rootView, "Info Snackbar")
 ```
 
