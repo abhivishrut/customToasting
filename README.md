@@ -13,6 +13,7 @@ dependencyResolutionManagement {
 		}
 	}
 ```
+# Dependency Version : [![](https://jitpack.io/v/abhivishrut/customToasting.svg)](https://jitpack.io/#abhivishrut/customToasting)
 > Step 2. Add the dependency.
 
 ```gradle
