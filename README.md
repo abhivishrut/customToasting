@@ -83,4 +83,5 @@ View rootView = getWindow().getDecorView().findViewById(android.R.id.content);	/
         Toaster.infoSnackbar(rootView, "Info Snackbar")
 ```
 
-
+# Preview
+https://github.com/user-attachments/assets/aa159422-9ab4-4fde-8785-a66b8a9995d3
