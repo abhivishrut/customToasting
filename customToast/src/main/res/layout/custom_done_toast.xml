@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="6dp"
+    android:background="@drawable/done_toast_bg"
+    android:gravity="center">
+
+    <!-- Done Icon -->
+    <ImageView
+        android:id="@+id/toast_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/svg_done"/>
+
+    <!-- Message -->
+    <TextView
+        android:id="@+id/done_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is codewati"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginHorizontal="6dp"
+        android:textColor="@color/green"
+        android:textSize="16sp"/>
+
+</LinearLayout>

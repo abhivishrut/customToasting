@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Toaster.shortToast(this, "Hello world!")
+        Toaster.longToast(this, "This is Codewati :)")
 
     }
 }
