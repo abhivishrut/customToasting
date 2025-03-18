@@ -17,7 +17,7 @@ dependencyResolutionManagement {
 
 ```gradle
 dependencies {
-	        implementation("com.github.abhivishrut:customToasting:Tag")
+	        implementation("com.github.abhivishrut:customToasting:1.0.2")
 	}
 ```
 > Release Tag :
