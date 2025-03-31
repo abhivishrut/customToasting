@@ -10,20 +10,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Toaster.shortToast(this, "Hello world!")
-        Toaster.longToast(this, "This is Codewati :)")
+        //Toaster.shortToast(this, "Hello world!")
+        //Toaster.longToast(this, "This is Codewati :)")
         Toaster.doneToast(this, "Codewati launches Successfully")
-        Toaster.alertToast(this, "Codewati launches Successfully")
-        Toaster.warningToast(this, "Codewati launches Successfully")
-        Toaster.loadingToast(this, "Codewati launches Successfully")
-        Toaster.infoToast(this, "Codewati launches Successfully")
+        //Toaster.alertToast(this, "Codewati launches Successfully")
+       // Toaster.warningToast(this, "Codewati launches Successfully")
+       // Toaster.loadingToast(this, "Codewati launches Successfully")
+        //Toaster.infoToast(this, "Codewati launches Successfully")
 
-        val rootView: View = window.decorView.findViewById(android.R.id.content)
+        //val rootView: View = window.decorView.findViewById(android.R.id.content)
 
-        Toaster.doneSnackbar(rootView, "Codewati launches Successfully")
-        Toaster.alertSnackbar(rootView, "Codewati launches Successfully")
-        Toaster.warningSnackbar(rootView, "Codewati launches Successfully")
-        Toaster.infoSnackbar(rootView, "Codewati launches Successfully")
+       // Toaster.doneSnackbar(rootView, "Codewati launches Successfully")
+        //Toaster.alertSnackbar(rootView, "Codewati launches Successfully")
+        //Toaster.warningSnackbar(rootView, "Codewati launches Successfully")
+        //Toaster.infoSnackbar(rootView, "Codewati launches Successfully")
 
 
 
