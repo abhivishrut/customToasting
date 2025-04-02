@@ -18,7 +18,7 @@ dependencyResolutionManagement {
 
 ```gradle
 dependencies {
-	        implementation("com.github.abhivishrut:customToasting:1.0.3")
+	        implementation("com.github.abhivishrut:customToasting:1.0.4")
 	}
 ```
 
