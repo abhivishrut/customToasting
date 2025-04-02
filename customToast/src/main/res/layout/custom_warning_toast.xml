@@ -49,11 +49,12 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/warning_heading"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="Error"
+                    android:text="Warning"
                     android:textColor="@color/black"
                     android:textSize="12sp"
                     android:textStyle="bold" />

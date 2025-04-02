@@ -24,12 +24,18 @@ public class Toaster {
     }
 
     // Done toast
-    public static void doneToast(Context context, String msg) {
+    public static void doneToast(Context context,String heading, String msg) {
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.custom_done_toast, null);
 
+        TextView title = layout.findViewById(R.id.done_heading);
         TextView text = layout.findViewById(R.id.done_message);
+        if (heading.isEmpty()){
+            title.setText("Success");
+        }else {
+            title.setText(heading);
+        }
         text.setText(msg);
 
         ImageView icon = layout.findViewById(R.id.toast_icon);
@@ -43,12 +49,19 @@ public class Toaster {
     }
 
     // Alert toast
-    public static void alertToast(Context context, String msg) {
+    public static void alertToast(Context context,String heading, String msg) {
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.custom_alert_toast, null);
 
+        TextView title = layout.findViewById(R.id.alert_heading);
         TextView text = layout.findViewById(R.id.alert_message);
+        if (heading.isEmpty()){
+            title.setText("Error");
+        }else {
+            title.setText(heading);
+        }
+        //title.setText(heading);
         text.setText(msg);
 
         ImageView icon = layout.findViewById(R.id.alert_icon);
@@ -62,12 +75,19 @@ public class Toaster {
     }
 
     // Warning toast
-    public static void warningToast(Context context, String msg) {
+    public static void warningToast(Context context,String heading, String msg) {
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.custom_warning_toast, null);
 
+        TextView title = layout.findViewById(R.id.warning_heading);
         TextView text = layout.findViewById(R.id.warning_message);
+        if (heading.isEmpty()){
+            title.setText("Warning");
+        }else {
+            title.setText(heading);
+        }
+        //title.setText(heading);
         text.setText(msg);
 
         ImageView icon = layout.findViewById(R.id.warning_icon);
@@ -81,12 +101,19 @@ public class Toaster {
     }
 
     // Info toast
-    public static void infoToast(Context context, String msg) {
+    public static void infoToast(Context context,String heading, String msg) {
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.custom_info_toast, null);
 
+        TextView title = layout.findViewById(R.id.info_heading);
         TextView text = layout.findViewById(R.id.info_message);
+        if (heading.isEmpty()){
+            title.setText("Info");
+        }else {
+            title.setText(heading);
+        }
+        //title.setText(heading);
         text.setText(msg);
 
         ImageView icon = layout.findViewById(R.id.info_icon);
@@ -100,12 +127,19 @@ public class Toaster {
     }
 
     // Loading toast
-    public static void loadingToast(Context context, String msg) {
+    public static void loadingToast(Context context,String heading, String msg) {
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.custom_loading_toast, null);
 
+        TextView title = layout.findViewById(R.id.loading_heading);
         TextView text = layout.findViewById(R.id.load_message);
+        if (heading.isEmpty()){
+            title.setText("Loading");
+        }else {
+            title.setText(heading);
+        }
+        //title.setText(heading);
         text.setText(msg);
 
         ImageView icon = layout.findViewById(R.id.load_icon);
