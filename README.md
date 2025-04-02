@@ -18,7 +18,7 @@ dependencyResolutionManagement {
 
 ```gradle
 dependencies {
-	        implementation("com.github.abhivishrut:customToasting:1.0.4")
+	        implementation("com.github.abhivishrut:customToasting:1.0.6")
 	}
 ```
 
@@ -26,15 +26,15 @@ dependencies {
 # For JAVA
 (MainActivity.java)
 ```
-	Toaster.doneToast(this, "Success Button");
+	Toaster.doneToast(this,"Success", "Success Button");
 
-	Toaster.alertToast(this, "Error Button");
+	Toaster.alertToast(this,"Error", "Error Button");
 
-	Toaster.warningToast(this, "Warning Button");
+	Toaster.warningToast(this,"Warning", "Warning Button");
 
-	Toaster.loadingToast(this, "Loading Button");
+	Toaster.loadingToast(this,"Loading", "Loading Button");
 
-	Toaster.infoToast(this, "Info Button");
+	Toaster.infoToast(this,"Info", "Info Button");
 
 	Toaster.shortToast(this, "Short Toast");
 
@@ -61,15 +61,15 @@ View rootView = getWindow().getDecorView().findViewById(android.R.id.content);	/
 
         Toaster.longToast(this, "Long Toast")
 
-        Toaster.doneToast(this, "Success Button")
+        Toaster.doneToast(this,"Success", "Success Button")
 
-        Toaster.alertToast(this, "Error Button")
+        Toaster.alertToast(this,"Error", "Error Button")
 
-        Toaster.warningToast(this, "Warning Button")
+        Toaster.warningToast(this,"Warning", "Warning Button")
 
-        Toaster.loadingToast(this, "Loading Button")
+        Toaster.loadingToast(this,"Loading", "Loading Button")
 
-        Toaster.infoToast(this, "Info Button")
+        Toaster.infoToast(this,"Info", "Info Button")
 
 
 
