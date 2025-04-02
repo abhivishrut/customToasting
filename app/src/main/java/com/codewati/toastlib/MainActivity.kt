@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         //Toaster.shortToast(this, "Hello world!")
         //Toaster.longToast(this, "This is Codewati :)")
-        Toaster.doneToast(this, "Codewati launches Successfully")
+        //Toaster.doneToast(this, "Codewati launches Successfully")
         //Toaster.alertToast(this, "Codewati launches Successfully")
        // Toaster.warningToast(this, "Codewati launches Successfully")
        // Toaster.loadingToast(this, "Codewati launches Successfully")

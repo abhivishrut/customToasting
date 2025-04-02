@@ -4,6 +4,7 @@ import static com.google.android.material.snackbar.Snackbar.*;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -37,6 +38,7 @@ public class Toaster {
         Toast toast = new Toast(context);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(layout);
+        toast.setGravity(Gravity.START | Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
     }
 
@@ -55,6 +57,7 @@ public class Toaster {
         Toast toast = new Toast(context);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(layout);
+        toast.setGravity(Gravity.START | Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
     }
 
@@ -73,6 +76,7 @@ public class Toaster {
         Toast toast = new Toast(context);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(layout);
+        toast.setGravity(Gravity.START | Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
     }
 
@@ -91,6 +95,7 @@ public class Toaster {
         Toast toast = new Toast(context);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(layout);
+        toast.setGravity(Gravity.START | Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
     }
 
@@ -109,6 +114,7 @@ public class Toaster {
         Toast toast = new Toast(context);
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(layout);
+        toast.setGravity(Gravity.START | Gravity.CENTER_VERTICAL, 0, 0);
         toast.show();
     }
 

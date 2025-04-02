@@ -1,45 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white">
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="8dp"
+        android:layout_height="60dp"
+        android:background="@drawable/solidcorner"
+        android:backgroundTint="@color/red"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/light_red"
-        android:gravity="center">
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view">
 
-        <View
-            android:layout_width="4dp"
-            android:layout_height="match_parent"
-            android:background="@color/red"/>
-
-        <!-- Done Icon -->
-        <ImageView
-            android:id="@+id/alert_icon"
-            android:layout_width="24dp"
-            android:layout_marginStart="4dp"
-            android:layout_height="24dp"
-            android:padding="2dp"
-            android:layout_marginVertical="4dp"
-            android:src="@drawable/svg_cross"/>
-
-        <!-- Message -->
-        <TextView
-            android:id="@+id/alert_message"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="This is codewati"
-            android:singleLine="true"
-            android:ellipsize="end"
-            android:textSize="12sp"
-            android:layout_marginStart="4dp"
-            android:layout_marginEnd="6dp"
-            android:textColor="@color/red"/>
+            android:background="@drawable/lightcorner"
+            android:backgroundTint="@color/light_red"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- Done Icon -->
+            <ImageView
+                android:id="@+id/alert_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="6dp"
+                android:src="@drawable/svg_cross" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Error"
+                    android:textColor="@color/red"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/alert_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Something went wrong :("
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
